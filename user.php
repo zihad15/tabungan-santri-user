@@ -92,15 +92,27 @@ $caks ="http://localhost:8000/";
 			}
 
 		</script>
-
+		<br>
+		<br>
+		<br>
 		<div class="row">
-			<div class="col-md-12">
-
-			<a href="http://localhost:8000/user_add"><button type="button" class="btn btn-success">Add</button></a>	
+			<div class="col-md-1">
+				<img src="assets/image/logo.jpg">
+			</div>
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-9">
+				<h1>TABUNGAN SANTRI</h1>
+				<h1>PON - PES PERPADUAN</h1>
+				<h1>DAARUL MUGHNI AL - MAALIKI</h1>
 			</div>
 		</div>
 		<br>
-		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" autofocus>
+		<br>
+		<h4>Cara pengambilan : <strong>MASUKKAN</strong> nomor rekening -> Tekan <strong>TAB </strong>-> Lalu tekan <strong>ENTER</strong>-> Lalu tekan <strong>SIDIK JARI </strong>-> Pilih <strong>Jumlah Uang</strong></h4>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Ketik disini no rekening.." style="background-color: yellow"  autofocus>
+		<font ></font>
 
 <?php
 
@@ -113,20 +125,12 @@ $caks ="http://localhost:8000/";
 						."<table class='table table-bordered table-striped table-hover js-basic-example dataTable' id='myTable'>"
 								."<thead>"
 									."<tr>"
-										."<th class='col-md-4'>User ID</th>"
+										."<th class='col-md-4'>No Rekening</th>"
 										."<th class='col-md-4'>Username</th>"
 										."<th class='col-md-2'>Template</th>"
 										."<th class='col-md-2'>Action</th>"
 									."</tr>"
 								."</thead>"
-								."<tfoot>"
-									."<tr>"
-										."<th class='col-md-4'>User ID</th>"
-										."<th class='col-md-4'>Username</th>"
-										."<th class='col-md-2'>Template</th>"
-										."<th class='col-md-2'>Action</th>"
-									."</tr>"
-								."</tfoot>"
 								."<tbody>";
 
 			foreach ($user as $row) {
@@ -152,7 +156,7 @@ $caks ="http://localhost:8000/";
 				 					."<td>".$row['user_name']."</td>"
 				 					."<td><code id='user_finger_".$row['user_id']."'>".count($finger)."</code></td>"
 				 					."<td>"
-										."<button type='button' class='btn btn-xs btn-danger' onclick=\"user_delete('".$row['user_id']."','".$row['user_name']."')\">Delete</button>"
+										// ."<button type='button' class='btn btn-xs btn-danger' onclick=\"user_delete('".$row['user_id']."','".$row['user_name']."')\">Delete</button>"
 										."&nbsp"
 										."$register"
 										."$verification"

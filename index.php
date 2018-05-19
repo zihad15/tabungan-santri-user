@@ -8,8 +8,8 @@
 		<?php include 'include/global.php'; ?>
 		<?php include 'include/head.php'; ?>
 	</head>
-	<body onkeydown="if(event.keyCode==13){event.keyCode=9; return event.keyCode}">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<body >
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: green">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -18,13 +18,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">PORTAL TABUNGAN SANTRI</a>
+					<!-- <a class="navbar-brand" href="#">PORTAL TABUNGAN SANTRI</a> -->
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
 						<!-- <li><a href="#" onclick="load('<?php echo $base_path?>device.php?action=index')">Device</a></li> -->
-						<li><a href="#" onclick="load('<?php echo $base_path?>user.php?action=index')">User</a></li>
-						<li><a href="#" onclick="load('<?php echo $base_path?>login.php?action=index')">Login</a></li>
+						<!-- <li><a href="#" onclick="load('<?php echo $base_path?>user.php?action=index')">User</a></li> -->
+						<!-- <li><a href="#" onclick="load('<?php echo $base_path?>login.php?action=index')">Login</a></li> -->
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>

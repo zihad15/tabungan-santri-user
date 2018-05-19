@@ -56,12 +56,5 @@ function myFunction() {
   }
 }
 </script>
-<script type="text/javascript">
-$(document).keypress(function(event){
-        if (event.keyCode == 13) { 
-                document.getElementById("myBtn").focus();
-            }
-    });
-</script>
 
 <link type="image/gif" href="assets/image/favicon.gif" rel="icon">
